@@ -1,0 +1,11 @@
+<div class="collapse navbar-collapse pull-right" ng-controller="NavigationController">
+  <ul class="nav navbar-nav">
+    <li ng-show="signedIn()"><a>Hi, {{ user.name }}!</a></li>
+    <li><a href="#/">Home</a></li>
+    <li ng-show="signedIn()"><a href="#/my_gifs">My GIFs</a></li>
+    <li ng-hide="signedIn()"><a href="#/login">Log In</a></li>
+    <li ng-hide="signedIn()"><a href="#/register">Register</a></li>
+    <li ng-show="signedIn()"><a href="#/" ng-click="logout()">Log Out</a></li>
+  </ul>
+</div>
+</div>

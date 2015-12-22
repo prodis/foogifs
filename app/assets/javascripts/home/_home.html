@@ -1,0 +1,44 @@
+<header class="row">
+  <h1>Foogifs</h1>
+</header>
+<hr>
+<section class="row">
+  <form>
+    <div class="input-group">
+      <input ng-model="q" type="text" class="form-control" placeholder="Find GIFs" autocomplete="off" autofocus>
+      <button ng-click="search(q, limit)" class="btn btn-primary btn-lg">Search</button>&nbsp;
+      <label>Results limit:
+        <select ng-model="limit" ng-init="limit = '5'">
+          <option value="5">5</option>
+          <option value="10">10</option>
+          <option value="20">20</option>
+        </select>
+      </label>
+    </div>
+  </form>
+</section>
+<section class="row" ng-if="gifs">
+   <h2 class="h3">Results: {{gifs.length}} GIFs found</h2>
+   <h3 ng-hide="signedIn()" class="h4">Log to save GIFs</h3>
+   <div ng-show="signedIn()">
+     <label>
+       <input ng-model="showSaved" ng-true-value="" ng-false-value="false" type="checkbox">
+       Show saved GIFs
+     </label>
+   </div>
+
+   <ul class="list-unstyled">
+     <li ng-repeat="gif in gifs | filter:{saved:showSaved}">
+       <section class="well">
+         <img ng-src="{{ gif.url }}" alt="" />
+         <div ng-show="signedIn()">
+           <div ng-show="gif.saved">Saved in your GIFs!</div>
+           <form ng-submit="saveGif(gif, tags)" ng-hide="gif.saved">
+             <input ng-model="tags" type="text" class="form-control" placeholder="Tags separated by commas">
+             <input type="submit" value="Save">
+           </form>
+         </div>
+       </section>
+     </li>
+   </ul>
+</section>

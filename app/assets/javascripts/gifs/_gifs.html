@@ -1,0 +1,16 @@
+<header class="row">
+  <h1>Foogifs</h1>
+</header>
+<hr>
+<section class="row">
+ <ul class="list-unstyled">
+   <li ng-repeat="gif in gifs">
+     <section class="well">
+       <img ng-src="{{ gif.url }}" alt="" />
+       <span>Tags:
+         <span ng-repeat="tag in gif.tag_list">#{{tag}} </span>
+       </span>
+     </section>
+   </li>
+ </ul>
+</section>

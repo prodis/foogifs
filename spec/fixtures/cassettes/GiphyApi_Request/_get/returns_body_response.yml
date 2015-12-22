@@ -1,0 +1,78 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.giphy.com//v1/gifs/feqkVgjJpYtjy?api_key=dc6zaTOxFJmzC
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*; q=0.5, application/xml"
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 22 Dec 2015 06:12:50 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d5adb364164dbf1fc8df429bda74b23221450764770; expires=Wed, 21-Dec-16
+        06:12:50 GMT; path=/; domain=.giphy.com; HttpOnly
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - Content-Type, Accept, x-requested-with, cache-control
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Vary:
+      - Accept-Encoding
+      X-Robots-Tag:
+      - noindex
+      Cf-Cache-Status:
+      - MISS
+      Expires:
+      - Tue, 22 Dec 2015 06:13:20 GMT
+      Cache-Control:
+      - public, max-age=30
+      Server:
+      - cloudflare-nginx
+      Cf-Ray:
+      - 2589ad6489530fbe-GRU
+      Content-Encoding:
+      - gzip
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAAA8VXy27bMBC89yuCPUs2SVHPT0gPvRUtYECgLVpmoldFGq4T
+        +N+LlRI/JCFOTaO9ydZqZmd2uLa+vEImjIDkFcy+kZBArtbggMoggbX89fw9
+        f3psfpqnPTigi20OCci91K7e1KtnmblL1WbusHDbFpDAxpgmWcwX81w1m/1s
+        VZd4udaL+XWEpTLFPs3VOh1iNZuZ0ov5j0dGyKnyWpUslzIbVZ366u4v5sM2
+        tlq2lSjRF9Rfb9sVXh8RCmVMIUWlSlGgtJnZlsui7TGbWpvFnIZxzH0aRiQE
+        B1phVIUm5uDAqq6MrMxbW0eC1BTo/gfYp1LkGMr64MHpplTZ1K1JM2GkUZ1Y
+        RqjnEs9l9IHwhHgJicAB08oqU1U+qOQupS5lDyRIGEt81iGKXGpM1Vr9llm6
+        kSrfGPw86LWUmRJsdjaJ7pvBJBZzRsisT+ZOZWYDCXDugwPvwMAIQVfUCzbF
+        uc897KNs+K1s+GgHkL6BspCFMTYgl82toN2zPcQ7LGck9DgcnAurUm1UUdgZ
+        lurrlg1ps3pXaVE2hcwsybPr5Md50chjDG9beJtmU+5GsU+Dk8q3ZmyE7Qa6
+        eiFHXfG5LOpHEcq6PYa7cQ49GlPLHO6mrKKMBeeJ6ATeI4e7URDHng1Y7xbD
+        3SiHY+7jvCKPdPvQxtnpGLKAB+PDpkth5S0dLUXGvHNx9J5LEdlGYWSc8DCw
+        8AxRJwyjLA7IxFZEx6wzSSd244Rzw5NgP63h7ujncyTtNuSddkfHNhpXGIcR
+        6rSY1uTu4DRg04bdY1jjBTI27uBAtzTUi9XK6AsuyTwPXTxFwz87VD7OiV6w
+        WyvuCkaSJ7q4YC1Em0tb1uucHypH5G35X5qoW5WrSlj7/vfkDqxbUeK/XWD4
+        63Hjge0LRic2DiOOHLee2L5g4siykFASnVv3T4Nb1HXTvQm9Thr2STIXYTrT
+        DoeDA6XsX2W1EWarIWGEOFBqfN/69hUOhz8fg7Pf7g4AAA==
+    http_version: 
+  recorded_at: Tue, 22 Dec 2015 06:12:50 GMT
+recorded_with: VCR 3.0.1
