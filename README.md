@@ -21,3 +21,11 @@ bin/rails server
 ```
 bin/rspec
 ```
+
+## TODO
+* Replace "Result limits" by "Load more..." feature;
+* Show gifs in a grid;
+* Angular.js unit test (Jasmine, PhantomJs);
+* Features specs (Capybara, Selenium);
+* Refactory (optimize) SearchController#index action;
+* Better layout.
